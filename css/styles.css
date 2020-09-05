@@ -16,9 +16,26 @@ body {
 .wrapper {
   background: #ffffff;
   display: flex;
-  max-width: 1200px;
   margin: 0 auto;
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 480px) {
+  .wrapper {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+  }
 }
 
 .sidebar {
@@ -33,10 +50,31 @@ body {
 }
 
 .about-me-container {
-  padding-left: 90px;
-  padding-right: 90px;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding: 90px;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    display: block;
+  }
+
+  .my-photo {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .about-me-container {
+    padding: 50px 50px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .about-me-container {
+    padding: 50px 50px;
+  }
 }
 
 .contacts-container {
